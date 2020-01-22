@@ -1,0 +1,16 @@
+<?php
+$count=1;
+for($i=0;$i<15;$i=$i+$count)
+{
+    for($j=0;$j<=$i;$j++)
+    {
+        echo"*";
+    }
+    for($j=0;$j<$count;$j++)
+    {
+        echo"0";
+    }
+    $count++;
+    echo"<br>";
+}
+?>
