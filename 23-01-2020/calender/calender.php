@@ -1,89 +1,118 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <br><br>
+        <form method="POST">
+        <table>
+            <tr>
+                <td>Month From : <input type="number" name="monthFrom" max="12" min="1"></td>
+                <td>Year From  : <input type="text" name="yearFrom"></td>
+            </tr>
+            <tr>
+                <td>Month To : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="monthTo" max="12" min="1"></td>
+                <td>Year To  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="yearTo"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="Get calender"></td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+</body>
+</html>
 <?php 
 session_start();
 if(isset($_POST['submit']))
 {
-    $month1=$_POST['month1'];
-    $_SESSION['month1']=$month1;
-    $year1=$_POST['year1'];   
-    $_SESSION['year1']=$year1;
+    $monthFrom=$_POST['monthFrom'];
+    $_SESSION['monthFrom']=$monthFrom;
+    $yearFrom=$_POST['yearFrom'];   
+    $_SESSION['yearFrom']=$yearFrom;
 
-    $month2=$_POST['month2'];
-    $_SESSION['month2']=$month2;
-    $year2=$_POST['year2'];   
-    $_SESSION['year2']=$year2;
+    $monthTo=$_POST['monthTo'];
+    $_SESSION['monthTo']=$monthTo;
+    $yearTo=$_POST['yearTo'];   
+    $_SESSION['yearTo']=$yearTo;
     
-    if($year1<$year2)
+    if($yearFrom<$yearTo)
     { 
-        for($i=$month1;$i<=12;$i++)
+        for($i=$monthFrom;$i<=12;$i++)
         {  
-            calender($i,$year1);
+            calender($i,$yearFrom);
         }
-        for($i=1;$i<=$month2;$i++)
+        for($i=1;$i<=$monthTo;$i++)
         {   
-            calender($i,$year2);
+            calender($i,$yearTo);
         }
     }
-    else if($year1>$year2)
+    else if($yearFrom>$yearTo)
     {
         echo "Not Found";
     }
-    else if($year1==$year2)
+    else if($yearFrom==$yearTo)
     {    
        
-        for($i=$month1;$i<=$month2;$i++)
+        for($i=$monthFrom;$i<=$monthTo;$i++)
         {
-            calender($i,$year1);
+            calender($i,$yearFrom);
         }
     }
 }
 else
 {
-    $year1=$_SESSION['year1'];
-    $year2=$_SESSION['year2'];
-    $month1=$_SESSION['month1'];
-    $month2=$_SESSION['month2'];
-    if($year1<$year2)
+    $yearFrom=$_SESSION['yearFrom'];
+    $yearTo=$_SESSION['yearTo'];
+    $monthFrom=$_SESSION['monthFrom'];
+    $monthTo=$_SESSION['monthTo'];
+  
+    if($yearFrom<$yearTo)
     { 
-        for($i=$month1;$i<=12;$i++)
+        for($i=$monthFrom;$i<=12;$i++)
         {  
-            calender($i,$year1);
+            calender($i,$yearFrom);
         }
-        for($i=1;$i<=$month2;$i++)
+        for($i=1;$i<=$monthTo;$i++)
         {   
-            calender($i,$year2);
+            calender($i,$yearTo);
         }
     }
-    else if($year1>$year2)
+    else if($yearFrom>$yearTo)
     {
         echo "Not Found";
     }
-    else if($year1==$year2)
+    else if($yearFrom==$yearTo)
     {    
        
-        for($i=$month1;$i<=$month2;$i++)
+        for($i=$monthFrom;$i<=$monthTo;$i++)
         {
-            calender($i,$year1);
+            calender($i,$yearFrom);
         }
     }
-    echo"<br>===========================================<br>";
+    
 }
 function calender($month,$year)
 {
     $tday=cal_days_in_month(0,$month,$year);
-    echo $month."-".$year;
+   
     $day= date("l", mktime(0, 0, 0,$month,1,$year));
     $days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-
+    $arymonth=['January','February','March','April','May','June','July','August','September','October','November','December'];
+    echo "<h3>".$arymonth[$month-1]." ".$year."</h3> <br>";
     echo"<table border='1'>
             <tr>
                 <th>Monday</th>
-                <th>tuesday</th>
-                <th>wednesday</th>
-                <th>thursday</th>
-                <th>friday</th>
-                <th>saturday</th>
-                <th>sunday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>&nbsp;Friday&nbsp;</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
             </tr>";
     $flag=0;
     $d=1;
@@ -95,7 +124,7 @@ function calender($month,$year)
             if(($day==$days[$j]) && ($d==1))
             {
 
-                echo"<td align='center'>".$d."</td>";
+                echo"<td>".$d."</td>";
                 $d++;
             }
             else
@@ -118,32 +147,3 @@ function calender($month,$year)
     echo"</table>";
 }
 ?>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <br><br>
-        <form method="POST">
-        <table border="1">
-            <tr>
-                <td>Month1 : <input type="number" name="month1" max="12" min="1"></td>
-                <td>Year 1 : <input type="text" name="year1"></td>
-            </tr>
-            <tr>
-                <td>Month2 : <input type="number" name="month2"max="12" min="1"></td>
-                <td>Year 2 : <input type="text" name="year2"></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center"><input type="submit" name="submit" value="Get calender"></td>
-            </tr>
-        </table>
-
-        
-    </form>
-</body>
-</html>
