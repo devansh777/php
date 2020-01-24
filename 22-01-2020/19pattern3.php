@@ -1,14 +1,12 @@
 <?php
-      echo"<table border='1'>";
     $n=1;
     for($i=0;$i<5;$i++)
     {
-        echo"<tr>";
        if($i==0 || $i==4)
         {
             for($j=0;$j<5;$j++)
             {
-                echo"<td> * </td> ";
+                echo" * ";
             }
         }
         else
@@ -17,16 +15,17 @@
             {
                 if($j==0 || $j==4)
                 {
-                    echo "<td> * </td>" ;
+                    echo " * " ;
                 }
                 else
                 {
-                    echo "<td></td>";
+                    echo "&nbsp&nbsp";
                 }
             }
         }
-        echo"</tr>";
+        echo"<br><br>";
         
     }
-    echo"</table>";
+
+
 ?>
