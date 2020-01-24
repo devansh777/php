@@ -13,22 +13,59 @@ if(isset($_POST['submit']))
     $year2=$_POST['year2'];   
     $_SESSION['year2']=$year2;
     
-    $y1=(int)$year1;
-    
-    $y2=(int)$year2;
-    
-    for($i=$month1;$i<=12;$i++)
-    {
-        calender($i,$year1);
+    if($year1<$year2)
+    { 
+        for($i=$month1;$i<=12;$i++)
+        {  
+            calender($i,$year1);
+        }
+        for($i=1;$i<=$month2;$i++)
+        {   
+            calender($i,$year2);
+        }
     }
-    for($i=1;$i<=$month2;$i++)
+    else if($year1>$year2)
     {
-        calender($i,$year2);
+        echo "Not Found";
+    }
+    else if($year1==$year2)
+    {    
+       
+        for($i=$month1;$i<=$month2;$i++)
+        {
+            calender($i,$year1);
+        }
     }
 }
 else
 {
-    calender($_SESSION['month'],$_SESSION['year']);
+    $year1=$_SESSION['year1'];
+    $year2=$_SESSION['year2'];
+    $month1=$_SESSION['month1'];
+    $month2=$_SESSION['month2'];
+    if($year1<$year2)
+    { 
+        for($i=$month1;$i<=12;$i++)
+        {  
+            calender($i,$year1);
+        }
+        for($i=1;$i<=$month2;$i++)
+        {   
+            calender($i,$year2);
+        }
+    }
+    else if($year1>$year2)
+    {
+        echo "Not Found";
+    }
+    else if($year1==$year2)
+    {    
+       
+        for($i=$month1;$i<=$month2;$i++)
+        {
+            calender($i,$year1);
+        }
+    }
     echo"<br>===========================================<br>";
 }
 function calender($month,$year)
@@ -37,7 +74,7 @@ function calender($month,$year)
     echo $month."-".$year;
     $day= date("l", mktime(0, 0, 0,$month,1,$year));
     $days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-    echo $day."<br>";
+
     echo"<table border='1'>
             <tr>
                 <th>Monday</th>
@@ -90,14 +127,23 @@ function calender($month,$year)
     <title>Document</title>
 </head>
 <body>
-    <br><br><br><br>
-        <form action="#" method="POST">
+    <br><br>
+        <form method="POST">
+        <table border="1">
+            <tr>
+                <td>Month1 : <input type="number" name="month1" max="12" min="1"></td>
+                <td>Year 1 : <input type="text" name="year1"></td>
+            </tr>
+            <tr>
+                <td>Month2 : <input type="number" name="month2"max="12" min="1"></td>
+                <td>Year 2 : <input type="text" name="year2"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="Get calender"></td>
+            </tr>
+        </table>
+
         
-        Month1 : <input type="text" name="month1"><br>
-        Year1 : <input type="text" name="year1"><br>
-        Month2 : <input type="text" name="month2"><br>
-        Year2 : <input type="text" name="year2"><br>
-        <input type="submit" name="submit" value="Get calender">
     </form>
 </body>
 </html>
