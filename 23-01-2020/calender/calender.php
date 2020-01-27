@@ -114,7 +114,6 @@ function calender($month,$year)
                 <th>Saturday</th>
                 <th>Sunday</th>
             </tr>";
-    $flag=0;
     $d=1;
     for($i = 1;$d<=$tday;$i++)
     {  
