@@ -1,0 +1,1 @@
+$query='SELECT c.firstName,c.email,ca.city,hob.value hobbie,getin.value get_in  from customers c LEFT JOIN customer_address ca ON c.customerId=ca.customerId LEFT JOIN customer_additional_info hob on c.customerId=hob.customerId AND hob.field_key = "hobbie" LEFT JOIN customer_additional_info getin on c.customerId=getin.customerId AND getin.field_key = "gettouch"';
