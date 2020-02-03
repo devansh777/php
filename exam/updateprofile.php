@@ -24,19 +24,19 @@
             </tr>
             <tr>
                 <td>First Name</td>
-                <td><input type="text" name="first_name" ></td>
+                <td><input type="text" name="first_name" value="<?php echo getFieldValue('first_name')?>"></td>
             </tr>
             <tr>
                 <td>Last Name</td>
-                <td><input type="text" name="last_name" ></td>
+                <td><input type="text" name="last_name" value="<?php echo getFieldValue('last_name')?>"></td>
             </tr>
             <tr>
                 <td>Emsail</td>
-                <td><input type="email" name="email" ></td>
+                <td><input type="email" name="email" value="<?php echo getFieldValue('email')?>"></td>
             </tr>
             <tr>
                 <td>Mobile Number</td>
-                <td><input type="text" name="mobile" minlength="10" maxlength="10" ></td>
+                <td><input type="text" name="mobile" minlength="10" maxlength="10" value="<?php echo getFieldValue('mobile')?>"></td>
             </tr>
             <tr>
                 <td>Password</td>
@@ -48,14 +48,14 @@
             </tr>
             <tr>
                 <td>Information</td>
-                <td><input type="text" name="information" ></td>
+                <td><input type="text" name="information" value="<?php echo getFieldValue('information')?>"></td>
             </tr>
             <tr>
                 <td></td>
                 <td><input type="checkbox" name="tnc">, I Accept Terms & Conditions.</td>
             </tr>
             <tr>
-                <td><input type="submit" name="btnregisrtation"value="Submit"></td>
+                <td><input type="submit" name="btnupdate"value="Submit"></td>
             </tr>
         </table>
 

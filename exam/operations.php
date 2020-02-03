@@ -86,8 +86,13 @@ function getFieldValue($fieldname,$returntype="")
         }
         $data['last_login']='';
         $data['created_at']='';
-        $data['update_at']='';   
-        insertdata($table,$data);
+        $data['update_at']=''; 
+        if(isset($_POST['btnupdate']))
+        {   
+            updatedata($table,$data,$_SESSION['uid']);
+        }
+        else{  
+        insertdata($table,$data);}
     }
     function filtercategory($post)
     {
@@ -142,7 +147,13 @@ function getFieldValue($fieldname,$returntype="")
         $data['image']='';
         $data['created_at']='';
         $data['updated_at']='';   
-        insertdata($table,$data);
+        $id=insertdata($table,$data);
+        $parent_ID=$_POST['parent_category_id'];
+        $input['post_id ']=$id;
+        echo $id;
+        $input['category_id ']=$parent_ID;
+        $table='post_category';
+        $id=insertdata($table,$input);
     }
 
     if(isset($_POST['loginSubmit']))
@@ -168,14 +179,15 @@ function getFieldValue($fieldname,$returntype="")
     }
     if(isset($_POST['profile']))
     {
-        header('location:registration.php');
+        header('location:updateprofile.php');
     }
     if(isset($_POST['logout']))
     {
-
         session_destroy();
-        header('location:login.php');
-        
+        header('location:login.php'); 
     }
-    
+    if(isset($_POST['btnupdate']))
+    {
+        filterdata($_POST);
+    }
 ?>
