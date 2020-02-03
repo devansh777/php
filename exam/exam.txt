@@ -1,0 +1,1 @@
+array filter :it is Filters elements of an array using a callback function.
