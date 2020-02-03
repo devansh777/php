@@ -1,0 +1,7 @@
+string replace= it is replace word from string.
+
+str_replace("searchword","replacewith",$string)
+
+example:
+    $string="good morning";
+    str_replace("morning","afternoon",$string);
