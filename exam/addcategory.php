@@ -16,30 +16,36 @@
             }
      ?>
       <br><br>
-
-    
+      <form method="post" enctype="multipart/form-data">
+            <input type="submit" name="manageCategory" value="Manage Category">
+            <input type="submit" name="profile" value="View Profile">
+            <input type="submit" name="AddCategory" value="Add Category">
+            <input type="submit" name="logout" value="logout">
+    </form>
+    <br><br>
     <form method="POST">
     <table>
         <tr>
             <td>Title</td>
-            <td><input type="text" name="title"></td>
+            <td><input type="text" name="title" value="<?php echo getFieldValue('title','category')?>"></td>
         </tr>
         <tr>
             <td>content</td>
-            <td><input type="text" name="content"></td>
+            <td><input type="text" name="content" value="<?php echo getFieldValue('content','category')?>"></td>
         </tr>
         <tr>
             <td>URL</td>
-            <td><input type="text" name="url"></td>
+            <td><input type="text" name="url" value="<?php echo getFieldValue('url','category')?>"></td>
         </tr>
         <tr>
             <td>Meta Title</td>
-            <td><input type="text" name="meta_title"></td>
+            <td><input type="text" name="meta_title" value="<?php echo getFieldValue('meta_title','category')?>"></td>
         </tr>
         <tr>
             <td>Parent Category</td>
             <td><select name="parent_category_id">
-             <?php   $result=show_catagory();
+             <?php   $result=show_catagory('parent_category');
+
                 while($row = $result->fetch_assoc()) 
                 {
                     echo "<option value='".$row["parent_category_id"]."'>".$row['category_name']."</option>
@@ -49,7 +55,11 @@
             </td>
         </tr>
         <tr>
-            <td><input type="submit" name="addcatagory" value="submit"></td>
+            <td>Image</td>
+            <td><input type="file" name="file"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="addcatagory" value="submit"><input type="submit" name="updatecatagory" value="update"></td>
         </tr>
     </table>
     </form>

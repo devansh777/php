@@ -24,19 +24,19 @@
             </tr>
             <tr>
                 <td>First Name</td>
-                <td><input type="text" name="first_name" value="<?php echo getFieldValue('first_name')?>"></td>
+                <td><input type="text" name="first_name" value="<?php echo getFieldValue('first_name','user')?>"></td>
             </tr>
             <tr>
                 <td>Last Name</td>
-                <td><input type="text" name="last_name" value="<?php echo getFieldValue('last_name')?>"></td>
+                <td><input type="text" name="last_name" value="<?php echo getFieldValue('last_name','user')?>"></td>
             </tr>
             <tr>
                 <td>Emsail</td>
-                <td><input type="email" name="email" value="<?php echo getFieldValue('email')?>"></td>
+                <td><input type="email" name="email" value="<?php echo getFieldValue('email','user')?>"></td>
             </tr>
             <tr>
                 <td>Mobile Number</td>
-                <td><input type="text" name="mobile" minlength="10" maxlength="10" value="<?php echo getFieldValue('mobile')?>"></td>
+                <td><input type="text" name="mobile" minlength="10" maxlength="10" value="<?php echo getFieldValue('mobile','user')?>"></td>
             </tr>
             <tr>
                 <td>Password</td>
@@ -48,7 +48,7 @@
             </tr>
             <tr>
                 <td>Information</td>
-                <td><input type="text" name="information" value="<?php echo getFieldValue('information')?>"></td>
+                <td><input type="text" name="information" value="<?php echo getFieldValue('information','user')?>"></td>
             </tr>
             <tr>
                 <td></td>

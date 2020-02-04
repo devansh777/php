@@ -1,16 +1,33 @@
 <?php   
 require_once'connection.php';
 session_start();
+$flag="";
 
-function getFieldValue($fieldname,$returntype="")
+function getFieldValue($fieldname,$table,$returntype="")
 {   $data=[];
-    if(isset($_SESSION['uid']))
-    {
-        $data = userdata('user',$_SESSION['uid']); 
-    }
     
-    return (is_array($data) ? $data[$fieldname] : $returntype);
+    if($table=='blog_post')
+    {
+        if(isset($_SESSION['editid']))
+            $data = userdata('blog_post',$_SESSION['editid'],'post_id');
+    } 
+    if($table=='user')
+    {    
+        $data = userdata('user',$_SESSION['uid'],'uid'); 
+    }
+    if($table=='category')
+    {
+        if(isset($_SESSION['editcid']))
+            $data = userdata('category',$_SESSION['editcid'],'category_id');
+    }
+    if($table=='post_category')
+    {   
+        if(isset($_SESSION['editid']))
+            $data = userdata('post_category',$_SESSION['editid'],'post_id');
+    }
+    return (!empty($data) ? $data[$fieldname] : $returntype);
 }
+
     function validation($key,$value)
     {
         switch($key){
@@ -84,12 +101,12 @@ function getFieldValue($fieldname,$returntype="")
                     break;
             }
         }
-        $data['last_login']='';
+        $data['last_login']=NULL;
         $data['created_at']='';
         $data['update_at']=''; 
         if(isset($_POST['btnupdate']))
         {   
-            updatedata($table,$data,$_SESSION['uid']);
+            updatedata($table,$data,$_SESSION['uid'],'uid');
         }
         else{  
         insertdata($table,$data);}
@@ -117,9 +134,18 @@ function getFieldValue($fieldname,$returntype="")
                     break;
             }
         }
-        $data['created_at']='';
-        $data['update_at']='';   
-        insertdata($table,$data);
+        $data['uid']=$_SESSION['uid'];
+        $data['image']=fileuplode();
+        echo $data['image'];
+        $data['created_at']=date("Y/m/d");
+        $data['update_at']='';  
+        if(isset($_POST['updatecatagory']))
+        {
+            
+            updatedata($table,$data,$_SESSION['editcid'],'category_id');
+        } 
+        else
+            insertdata($table,$data);
     }
 
     
@@ -144,16 +170,32 @@ function getFieldValue($fieldname,$returntype="")
             }
         }
         $data['uid']=$_SESSION['uid'];
-        $data['image']='';
-        $data['created_at']='';
+        $data['image']=fileuplode();
+        echo $data['image'];
+        $data['created_at']=date("Y/m/d");
         $data['updated_at']='';   
-        $id=insertdata($table,$data);
-        $parent_ID=$_POST['parent_category_id'];
-        $input['post_id ']=$id;
-        echo $id;
-        $input['category_id ']=$parent_ID;
-        $table='post_category';
-        $id=insertdata($table,$input);
+        if(isset($_POST['updateblog']))
+        {
+            updatedata($table,$data,$_SESSION['editid'],'post_id');
+        }
+        else{
+            insertdata($table,$data);
+            $id=lastid($table);
+            $post_ID=$_POST['category_id'];
+            print_r($_POST['category_id']);
+            $input['post_id']=$id['mx'];
+            foreach ($post_ID as $key => $value) {
+              
+            $table='post_category';
+          
+            $input['category_id']=$value;
+          
+          
+            $id=insertdata($table,$input);
+            
+            }
+            
+        }
     }
 
     if(isset($_POST['loginSubmit']))
@@ -177,10 +219,6 @@ function getFieldValue($fieldname,$returntype="")
     {
         filterblog($_POST);
     }
-    if(isset($_POST['profile']))
-    {
-        header('location:updateprofile.php');
-    }
     if(isset($_POST['logout']))
     {
         session_destroy();
@@ -189,5 +227,82 @@ function getFieldValue($fieldname,$returntype="")
     if(isset($_POST['btnupdate']))
     {
         filterdata($_POST);
+    }
+    
+    if(isset($_GET['editid']))
+    {   
+    $GLOBALS['flag']='blogupd';
+    $_SESSION['editid']=$_GET['editid'];
+    header('location:addBlog.php');
+    }
+    if(isset($_GET['editcid']))
+    {   
+        echo"devansh";
+        $_SESSION['editcid']=$_GET['editcid'];
+        $GLOBALS[flag]='catupd';
+        header('location:addcategory.php');
+    }
+    if(isset($_POST['profile']))
+    {
+        $flag='usrupd';
+        header('location:updateprofile.php');
+    }
+    
+    if(isset($_POST['updatecatagory']))
+    {
+        filtercategory($_POST);
+    }
+    if(isset($_POST['updateblog']))
+    {
+        filterblog($_POST);
+    }
+    if(isset($_POST['AddCategory']))
+    {
+        unset($_SESSION['editcid']);
+        header('location:addcategory.php');   
+    }
+    if(isset($_POST['manageCategory']))
+    {
+        unset($_SESSION['editcid']);
+        header('location:ManageCategory.php');   
+    }
+    if(isset($_POST['AddBlog']))
+    {
+        unset($_SESSION['editid']);
+        header('location:addBlog.php');   
+    }
+ 
+    function fileuplode()
+    {
+        if(isset($_POST['file']))
+        {
+            $fle=$_POST['file'];
+        $name=$_FILES[$fle]['name'];
+        $size=$_FILES[$fle]['size'];
+        $temp_name=$_FILES[$fle]['tmp_name'];
+        $extension=substr($name,strpos($name,'.')+1);
+
+        $maxsize=100000;
+        echo $extension;        
+            echo $name;
+            if($extension =='jpg' || $extension=='jpeg')
+            { 
+                if(isset($name))
+                {
+                    $location = 'file/';
+                    if(move_uploaded_file($temp_name,$location.$name))
+                    {
+                       return $location.$name;
+                    }
+                }
+            }
+            else
+            {
+                echo "<br>file is not jpg or jpeg";
+            }
+            
+            
+        
+        }
     }
 ?>

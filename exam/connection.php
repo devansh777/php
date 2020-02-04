@@ -8,7 +8,7 @@
         $cn=mysqli_connect($host,$uname,$password,$db);
         return $cn;
     }
-    function updatedata($table,$data,$cid){
+    function updatedata($table,$data,$cid,$cond){
         $fields = [];
         $values = [];
         $set = "";
@@ -18,25 +18,25 @@
             $set.=$fields[$i]."=";
             $set.="'".$values[$i]."',";
         }
-        $query = "update $table set ".substr($set,0,strlen($set)-1)." where uid='".$cid."'";
+        $query = "update $table set ".substr($set,0,strlen($set)-1)." where ".$cond."='".$cid."'";
         $customer = mysqli_query(conn(),$query);
         if($customer){
             echo"Update Successfully";
         }
     }
-    function userdata($table,$uid)
+    function userdata($table,$uid,$cond)
     {
-        $query="SELECT * FROM user where uid=".$uid;
+        $query="SELECT * FROM $table where ".$cond."='".$uid."'";
         $result=mysqli_query(conn(),$query);
         return mysqli_fetch_assoc($result);
     }
     function insertdata($table,$data) 
     {
         $email="";
-        if($table=='user')
-            $email=chkemail($data['email']);
+        if($table=='user'){
+            $email=chkemail($data['email']);}
            
-        if($email || $table=='category' || $table=='blog_post')
+        if($email || $table=='category' || $table=='blog_post' || $table='post_category')
         {
             $fields = [];
             $values = [];
@@ -46,14 +46,23 @@
             $query.="(".$fields.")";
             $query.=" VALUES ('".$values."') ";
             echo $query;
-    
             $insert = mysqli_query(conn(),$query);
-            return mysqli_insert_id(conn());
-            /* if($insert)
+            if($insert)
             {
-                header('location:blogpostlst.php');
-            } */
+                echo "Data inserted";
+            }
+            else
+            {
+                echo "error";
+            }
         }
+    }
+    function lastid($table)
+    {
+        
+        $query="SELECT max(post_id) mx FROM $table ";
+        $insert = mysqli_query(conn(),$query);
+        return mysqli_fetch_assoc($insert);
     }
     function chkemail($email)
     {
@@ -76,17 +85,14 @@
     }
     function show_blogpost()
     {
-        $query="SELECT * ,p.category_name,bp.published_at FROM category c,parent_category p, blog_post bp WHERE c. parent_category_id=p. parent_category_id";
-        $result=mysqli_query(conn(),$query);
+        $query="SELECT bp.post_id,c.title ctitle,bp.title,bp.published_at FROM category c,blog_post bp WHERE bp.uid=c.uid";
+        $result=mysqli_query(conn(),$query);    
         return $result;
     }
-    function show_catagory()
+    function show_catagory($table)
     {
-        $query="SELECT * FROM parent_category";
+        $query="SELECT * FROM $table";
         $result=mysqli_query(conn(),$query);
         return $result;
-    }
-
-
-
+    }   
 ?>

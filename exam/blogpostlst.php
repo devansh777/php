@@ -10,7 +10,6 @@
     <?php
     require_once 'connection.php';
     require_once 'operations.php';
-    echo "blogpostlst.php";
     
     if(!isset($_SESSION['uid']))
         {
@@ -22,17 +21,14 @@
      <br><br>
     <div>
         <form method="post">
-            <a href="ManageCategory.php">Manage Category</a>
-           
+            <input type="submit" name="manageCategory" value="Manage Category">
             <input type="submit" name="profile" value="View Profile">
-           
-            <a href="addBlog.php">Add blog</a>
-    
+            <input type="submit" name="AddBlog" value="Add Blog">
             <input type="submit" name="logout" value="logout">
     </form>
     </div>
     <br><br>
-    <table>
+    <table border=1>
         <tr>
             <th>PostId</th>
             <th>Category Name</th>
@@ -42,14 +38,15 @@
         </tr>
         <?php 
         $result=show_blogpost();
+        
         while($row = $result->fetch_assoc()) 
         {
             echo "<tr>
-                    <td>".$row['category_id']."</td>
-                    <td>".$row['category_name']."</td>
+                    <td>".$row['post_id']."</td>
+                    <td>".$row['ctitle']."</td>
                     <td>".$row['title']."</td>
                     <td>".$row['published_at']."</td>
-                    <td>";?><a href="#">Edit</a> <a href="#">Delete</a> <?php echo"</td>
+                    <td>";?><a href="operations.php?editid=<?php echo $row['post_id'];?>">Edit</a> <a href="#">Delete</a> <?php echo"</td>
                 </tr>";
         } 
         ?>

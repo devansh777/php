@@ -14,38 +14,50 @@
             header('location:login.php');
         }
      ?>
+     
+     <div>
+        <form method="post">
+            <input type="submit" name="manageCategory" value="Manage Category">
+            <input type="submit" name="profile" value="View Profile">
+            <input type="submit" name="AddBlog" value="Add Blog">
+            <input type="submit" name="logout" value="logout">
+    </form>
+    </div>
     <form method="POST">
     <table>
         <tr>
             <td>Title</td>
-            <td><input type="text" name="title"></td>
+            <td><input type="text" name="title" value="<?php echo getFieldValue('title','blog_post')?>"></td>
         </tr>
         <tr>
             <td>content</td>
-            <td><input type="text" name="content"></td>
+            <td><input type="text" name="content" value="<?php echo getFieldValue('content','blog_post')?>"> </td>
         </tr>
         <tr>
             <td>URL</td>
-            <td><input type="text" name="url"></td>
+            <td><input type="text" name="url" value="<?php echo getFieldValue('url','blog_post')?>"></td>
         </tr>
         <tr>
             <td>Published At</td>
-            <td><input type="date" name="published_at"></td>
+            <td><input type="date" name="published_at" value="<?php echo getFieldValue('published_at','blog_post')?>"></td>
         </tr>
         <tr>
             <td>Parent Category</td>
-            <td><select multiple name="parent_category_id">
-             <?php   $result=show_catagory();
+           
+            <td><select multiple name="category_id[]">
+             <?php   $result=show_catagory('category');
+            
                 while($row = $result->fetch_assoc()) 
                 {
-                    echo "<option value='".$row["parent_category_id"]."'>".$row['category_name']."</option>
-                            ";
+                    $selected=in_array($row['category_id'],[getFieldValue('category_id','post_category',[])]) ? 'selected="selected"':'';
+
+                   echo "<option value='".$row['category_id']."'$selected>".$row['title']."</option>";
                 } ?>
                 </select>
             </td>
         </tr>
         <tr>
-            <td><input type="submit" name="addblog" value="submit"></td>
+            <td><input type="submit" name="addblog" value="submit"><input type="submit" name="updateblog" value="update"></td>
         </tr>
     </table>
     </form>

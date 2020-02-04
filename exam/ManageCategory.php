@@ -20,11 +20,9 @@
     <br><br>
     <div>
     <form method="post">
-            <a href="ManageCategory.php">Manage Category</a>
-           
+            <input type="submit" name="manageCategory" value="Manage Category">
             <input type="submit" name="profile" value="View Profile">
-            <a href="addcategory.php">Add Category</a>
-    
+            <input type="submit" name="AddCategory" value="Add Category">
             <input type="submit" name="logout" value="logout">
     </form>
     </div>
@@ -38,15 +36,15 @@
             <th>Action</th>
         </tr>
         <?php 
-        $result=show_catagory();
+        $result=show_catagory('category');
         while($row = $result->fetch_assoc()) 
         {
             echo "<tr>
-                    <td>".$row['parent_category_id']."</td>
-                    <td>######</td>
-                    <td>".$row['category_name']."</td>
-                    <td>######</td>
-                    <td>";?><a href="#">Edit</a> <a href="#">Delete</a> <?php echo"</td>
+                    <td>".$row['category_id']."</td>
+                    <td>".$row['created_at']."</td>
+                    <td>".$row['title']."</td>
+                    <td>".$row['created_at']."</td>
+                    <td>";?><a href="operations.php?editcid=<?php echo $row['category_id'];?>">Edit</a> <a href="#">Delete</a> <?php echo"</td>
                 </tr>";
         } 
         ?>
