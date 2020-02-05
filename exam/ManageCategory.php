@@ -41,7 +41,7 @@
         {
             echo "<tr>
                     <td>".$row['category_id']."</td>
-                    <td>".$row['created_at']."</td>
+                    <td><img src='file/".$row['image']."' height='100px' width='100px'></td>
                     <td>".$row['title']."</td>
                     <td>".$row['created_at']."</td>
                     <td>";?><a href="operations.php?editcid=<?php echo $row['category_id'];?>">Edit</a> <a href="#">Delete</a> <?php echo"</td>

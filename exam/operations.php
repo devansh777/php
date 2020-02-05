@@ -101,14 +101,16 @@ function getFieldValue($fieldname,$table,$returntype="")
                     break;
             }
         }
-        $data['last_login']=NULL;
-        $data['created_at']='';
-        $data['update_at']=''; 
+        
+        
+        $data['update_at']=date('m/d/Y h:i:s a', time()); 
         if(isset($_POST['btnupdate']))
         {   
             updatedata($table,$data,$_SESSION['uid'],'uid');
         }
-        else{  
+        else{
+            $data['last_login']=NULL;
+            $data['created_at']=date('m/d/Y h:i:s a', time());  
         insertdata($table,$data);}
     }
     function filtercategory($post)
@@ -137,15 +139,16 @@ function getFieldValue($fieldname,$table,$returntype="")
         $data['uid']=$_SESSION['uid'];
         $data['image']=fileuplode();
         echo $data['image'];
-        $data['created_at']=date("Y/m/d");
-        $data['update_at']='';  
+       
+        $data['update_at']=date('m/d/Y h:i:s a', time());  
         if(isset($_POST['updatecatagory']))
         {
             
             updatedata($table,$data,$_SESSION['editcid'],'category_id');
         } 
-        else
-            insertdata($table,$data);
+        else{
+            $data['created_at']=date('m/d/Y h:i:s a', time());
+            insertdata($table,$data);}
     }
 
     
@@ -172,13 +175,14 @@ function getFieldValue($fieldname,$table,$returntype="")
         $data['uid']=$_SESSION['uid'];
         $data['image']=fileuplode();
         echo $data['image'];
-        $data['created_at']=date("Y/m/d");
-        $data['updated_at']='';   
+        
+        $data['updated_at']=date('m/d/Y h:i:s a', time());   
         if(isset($_POST['updateblog']))
         {
             updatedata($table,$data,$_SESSION['editid'],'post_id');
         }
         else{
+            $data['created_at']=date('m/d/Y h:i:s a', time());
             insertdata($table,$data);
             $id=lastid($table);
             $post_ID=$_POST['category_id'];
@@ -208,6 +212,10 @@ function getFieldValue($fieldname,$table,$returntype="")
             $_SESSION['name']=$login['first_name'];
             
             $_SESSION['uid']=$login['uid'];
+            $table='user';
+            $cond='uid';
+            $data['last_login']=date('m/d/Y h:i:s a', time());
+            updatedata($table,$data,$_SESSION['uid'],$cond);
            header('location:blogpostlst.php');
         }
     }
@@ -271,38 +279,33 @@ function getFieldValue($fieldname,$table,$returntype="")
         unset($_SESSION['editid']);
         header('location:addBlog.php');   
     }
- 
+
     function fileuplode()
     {
-        if(isset($_POST['file']))
-        {
-            $fle=$_POST['file'];
-        $name=$_FILES[$fle]['name'];
-        $size=$_FILES[$fle]['size'];
-        $temp_name=$_FILES[$fle]['tmp_name'];
-        $extension=substr($name,strpos($name,'.')+1);
-
-        $maxsize=100000;
-        echo $extension;        
+        if(isset($_FILES['file']))
+        {            
+            
+            $name=$_FILES['file']['name'];
+            $temp_name=$_FILES['file']['tmp_name'];
+            $extension=substr($name,strpos($name,'.')+1);
+            echo $extension;        
             echo $name;
-            if($extension =='jpg' || $extension=='jpeg')
+            if($extension == 'jpg' || $extension == 'jpeg')
             { 
                 if(isset($name))
                 {
                     $location = 'file/';
                     if(move_uploaded_file($temp_name,$location.$name))
                     {
-                       return $location.$name;
+                        return $name;
                     }
                 }
             }
             else
             {
+                echo $location.$name;
                 echo "<br>file is not jpg or jpeg";
             }
-            
-            
-        
         }
     }
 ?>

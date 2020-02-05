@@ -16,14 +16,14 @@
             }
      ?>
       <br><br>
-      <form method="post" enctype="multipart/form-data">
+      <form method="post" >
             <input type="submit" name="manageCategory" value="Manage Category">
             <input type="submit" name="profile" value="View Profile">
             <input type="submit" name="AddCategory" value="Add Category">
             <input type="submit" name="logout" value="logout">
     </form>
     <br><br>
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">
     <table>
         <tr>
             <td>Title</td>
