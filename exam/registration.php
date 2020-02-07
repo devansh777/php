@@ -24,35 +24,35 @@
             </tr>
             <tr>
                 <td>First Name</td>
-                <td><input type="text" name="first_name" ></td>
+                <td><input type="text" name="first_name" required></td>
             </tr>
             <tr>
                 <td>Last Name</td>
-                <td><input type="text" name="last_name" ></td>
+                <td><input type="text" name="last_name" required></td>
             </tr>
             <tr>
-                <td>Emsail</td>
-                <td><input type="email" name="email" ></td>
+                <td>Email</td>
+                <td><input type="email" name="email" required></td>
             </tr>
             <tr>
                 <td>Mobile Number</td>
-                <td><input type="text" name="mobile" minlength="10" maxlength="10" ></td>
+                <td><input type="text" name="mobile" minlength="10" maxlength="10" required></td>
             </tr>
             <tr>
                 <td>Password</td>
-                <td><input type="password" name="password"></td>
+                <td><input type="password" name="password" required></td>
             </tr>
             <tr>
                 <td>Confirm Password</td>
-                <td><input type="password" name="cnfPassword"></td>
+                <td><input type="password" name="cnfPassword" required></td>
             </tr>
             <tr>
                 <td>Information</td>
-                <td><input type="text" name="information" ></td>
+                <td><input type="text" name="information" required ></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="checkbox" name="tnc">, I Accept Terms & Conditions.</td>
+                <td><input type="checkbox" name="tnc" required>, I Accept Terms & Conditions.</td>
             </tr>
             <tr>
                 <td><input type="submit" name="btnregisrtation"value="Submit"></td>

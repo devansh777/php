@@ -15,12 +15,15 @@
         {
             header('location:login.php');
         }
-   
+        if(isset($_POST['manageBlog']))
+        {
+            header('location:blogpostlst.php');
+        }
     ?>
     <br><br>
     <div>
     <form method="post">
-            <input type="submit" name="manageCategory" value="Manage Category">
+            <input type="submit" name="manageBlog" value="Manage Blog">
             <input type="submit" name="profile" value="View Profile">
             <input type="submit" name="AddCategory" value="Add Category">
             <input type="submit" name="logout" value="logout">

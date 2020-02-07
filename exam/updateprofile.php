@@ -9,8 +9,23 @@
 <?php
     require_once 'operations.php';
     $prefix=['Mr','Miss','Ms','Mrs','Dr']; 
+    if(!isset($_SESSION['uid']))
+    {
+        echo "devansh";
+        header('location:login.php');
+    } 
  ?>
 <body>
+<br><br>
+    <div>
+            <form method="post">
+            <input type="submit" name="manageCategory" value="Manage Category">
+            <input type="submit" name="profile" value="View Profile">
+            <input type="submit" name="AddBlog" value="Add Blog">
+            <input type="submit" name="logout" value="logout">
+    </form>
+    </div>
+    <br><br>
     <form method="POST">
         <table>
             <tr>
@@ -52,10 +67,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="checkbox" name="tnc">, I Accept Terms & Conditions.</td>
-            </tr>
-            <tr>
-                <td><input type="submit" name="btnupdate"value="Submit"></td>
+                <td><input type="submit" name="btnupdate"value="Update"></td>
             </tr>
         </table>
 

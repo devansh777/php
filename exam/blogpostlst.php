@@ -12,10 +12,9 @@
     require_once 'operations.php';
     
     if(!isset($_SESSION['uid']))
-        {
-            echo "devansh";
-            header('location:login.php');
-        } 
+    {
+        header('location:login.php');
+    } 
     
     ?>
      <br><br>
@@ -46,7 +45,7 @@
                     <td>".$row['ctitle']."</td>
                     <td>".$row['title']."</td>
                     <td>".$row['published_at']."</td>
-                    <td>";?><a href="operations.php?editid=<?php echo $row['post_id'];?>">Edit</a> <a href="#">Delete</a> <?php echo"</td>
+                    <td>";?><a href="operations.php?editid=<?php echo $row['post_id'];?>">Edit</a> <a href="operations.php?deletid=<?php echo $row['post_id'];?>">Delete</a> <?php echo"</td>
                 </tr>";
         } 
         ?>

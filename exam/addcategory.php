@@ -44,12 +44,10 @@
         <tr>
             <td>Parent Category</td>
             <td><select name="parent_category_id">
-             <?php   $result=show_catagory('parent_category');
-
+             <?php $result=show_catagory('parent_category');
                 while($row = $result->fetch_assoc()) 
                 {
-                    echo "<option value='".$row["parent_category_id"]."'>".$row['category_name']."</option>
-                            ";
+                    echo "<option value='".$row["parent_category_id"]."'>".$row['category_name']."</option>";
                 } ?>
                 </select>
             </td>
