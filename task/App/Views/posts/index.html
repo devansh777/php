@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+	<h1>Category List</h1>
+	<a href="/task/public/Admin/Category/insert">Add Category</a>
+	<br><br>
+	<table border="2">
+		<tr>
+			<th>CategoryName</th>
+			<th>urlKey</th>
+			<th>image</th>
+			<th>Status</th>
+			<th>Description</th>
+			<th colspan="2">Action</th>
+		</tr>
+	{% for Post in posts %}
+	<tr>
+		<td>{{Post.CategoryName}}</td>
+		<td>{{Post.urlKey}}</td>
+		<td>{{Post.image}}</td>
+		<td>{{Post.status}}</td>
+		<td>{{Post.description}}</td>
+		<td><a href="/task/public/Admin/Category/edit?id={{Post.categoryId}}">Edit</a></td>
+		<td><a href="/task/public/Admin/Category/delete?id={{Post.categoryId}}">Delete</a></td>
+	</tr>
+	{%endfor%}
+	</table>
+	{% endblock %}

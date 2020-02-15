@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+	<h1>Category List</h1>
+	<a href="/task/public/Admin/Product/addproduct">Add Product</a>
+	<br><br>
+	<table border="2">
+		<tr>
+			<th>productName</th>
+			<th>urlKey</th>
+			<th>image</th>
+			<th>status</th>
+            <th>Description</th>
+            <th>price</th>
+			<th colspan="2">Action</th>
+		</tr>
+	{% for Post in posts %}
+	<tr>
+		<td>{{Post.productName}}</td>
+		<td>{{Post.urlKey}}</td>
+		<td>{{Post.image}}</td>
+		<td>{{Post.status}}</td>
+        <td>{{Post.description}}</td>
+        <td>{{Post.price}}</td>
+		<td><a href="/task/public/Admin/Product/edit?id={{Post.productId}}">Edit</a></td>
+		<td><a href="/task/public/Admin/Product/delete?id={{Post.productId}}">Delete</a></td>
+	</tr>
+	{%endfor%}
+	</table>
+	{% endblock %}

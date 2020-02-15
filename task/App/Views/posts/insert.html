@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block body %}
+	<h1>Add Category</h1>
+    <form method="POST">
+    <table border="2">
+	<tr>
+        <td>Name :</td>
+        <td><input type="text" name="CategoryName" value={{data.CategoryName}}></td>
+    </tr>
+    <tr>
+        <td>UrlKey :</td>
+        <td><input type="text" name="urlKey" value={{data.urlKey}}></td>
+    </tr>
+    <tr><td>image :</td>
+        <td><input type="file" name="file"></td>
+    </tr>
+    <tr><td>Discription :</td>
+        <td><textarea name="description">{{data.description}}</textarea></td>
+    </tr>
+    <tr><td>Status :</td>
+        <td><input type="text" name="status" value={{data.status}}></td>
+    </tr>   
+    <tr><td>PerentCategory :</td>
+        <td><select name="parentCategory">
+            {% for Post in parents %}
+                {% if Post.parentCategoryId == data.parentCategory%}
+                    {% set selected="selected" %}
+                {% else %}
+                    {% set selected="" %}
+                {% endif %}
+            <option value="{{Post.parentCategoryId}}"{{selected}}>{{Post.parentCategoryName}}</option>
+            
+            {% endfor %}
+        </select></td>
+    </tr>
+    <tr>	
+        <td colspan="2"><input type="submit" name="btninsert" value="Submit"></td>
+	</tr>
+
+    </table>
+</form>
+	{% endblock %}

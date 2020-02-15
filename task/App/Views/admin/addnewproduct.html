@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block body %}
+	<h1>Add Product</h1>
+    <form method="POST">
+    <table border="2">
+	<tr>
+        <td>Name :</td>
+        <td><input type="text" name="productName" value={{data.productName}}></td>
+    </tr>
+    <tr>
+        <td>SKU :</td>
+        <td><input type="text" name="sku" value={{data.sku}}></td>
+    </tr>
+    <tr>
+        <td>UrlKey :</td>
+        <td><input type="text" name="urlKey" value={{data.urlKey}}></td>
+    </tr>
+    <tr><td>image :</td>
+        <td><input type="file" name="file"></td>
+    </tr>
+  
+    <tr><td>Status :</td>
+        <td><input type="text" name="status" value={{data.status}}></td>
+    </tr>
+    <tr><td>Discription :</td>
+        <td><textarea name="description">{{data.description}}</textarea></td>
+    </tr>
+    <tr><td>shortDiscription :</td>
+        <td><textarea name="shortdescription">{{data.shortDescription}}</textarea></td>
+    </tr>
+    <tr>
+        <td>price :</td>
+        <td><input type="text" name="price" value={{data.price}}></td>
+    </tr> 
+    <tr>
+        <td>stock :</td>
+        <td><input type="text" name="stock" value={{data.stock}}></td>
+    </tr>   
+    <tr><td>Category :</td>
+        <td><select name="category">
+            {% for Post in parents %}
+                {% if Post.categoryId == category.category_id %}
+                    {% set selected="selected" %}
+                {% else %}
+                    {% set selected="" %}
+                {% endif %}
+            <option value="{{Post.categoryId}}"{{selected}}>{{Post.CategoryName}}</option>
+            
+            {% endfor %}
+        </select></td>
+    </tr>
+    <tr>	
+        <td colspan="2"><input type="submit" name="btninsert" value="Submit"></td>
+	</tr>
+
+    </table>
+</form>
+	{% endblock %}
