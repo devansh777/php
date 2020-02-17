@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
 	<h1>Category List</h1>
-	<a href="/task/public/Admin/Category/insert">Add Category</a>
+	<a href="/task/public/Admin/Category/add">Add Category</a>
 	<br><br>
 	<table border="2">
 		<tr>
@@ -16,7 +16,7 @@
 	<tr>
 		<td>{{Post.CategoryName}}</td>
 		<td>{{Post.urlKey}}</td>
-		<td>{{Post.image}}</td>
+		<td><img src="../../../file/{{Post.image}}" height='50px'width='50px'/></td>
 		<td>{{Post.status}}</td>
 		<td>{{Post.description}}</td>
 		<td><a href="/task/public/Admin/Category/edit?id={{Post.categoryId}}">Edit</a></td>

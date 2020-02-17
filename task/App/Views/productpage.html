@@ -1,0 +1,24 @@
+<div style="padding-left: 50px; height: 300px;">
+<div style="margin-top: 30px; margin-bottom: 20px;">Category Name :<b>{{content[0].CategoryName}}</b></div>
+{% if(content[0].cstatus !=1) %}
+
+ 
+{% for Post in content %}
+<div style="float: left; padding-top: 10px;margin-left:10px; text-align: center;">
+<table>
+    <tr>
+        <td><img src="../../../file/{{Post.image}}" height='150px'width='150px'/></td>
+    </tr>
+    <tr > 
+        <td><a href="/task/public/mvc/products/{{Post.productName}}">{{Post.productName}}</a></td>
+      </tr>
+    <tr>
+        <td>Price {{Post.price}}</td>
+    </tr>
+</table>
+</div>
+    {% endfor %}
+{%else%}
+   <h3> Category Currently Not avaliable </h3>
+{% endif %}
+</div>

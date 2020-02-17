@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block body %}
+	<h1>Add Product</h1>
+    <form method="POST">
+    <table border="2">
+	<tr>
+        <td>Name :</td>
+        <td><input type="text" name="pageTitle" value={{data.pageTitle}}></td>
+    </tr>
+    <tr>
+        <td>UrlKey :</td>
+        <td><input type="text" name="urlKey" value={{data.urlKey}}></td>
+    </tr>
+    <tr><td>Status :</td>
+        <td><select name="status">
+                {% if 0 == data.status%}
+                {% set selected="selected" %}
+                {% else %}
+                {% set selected="" %}
+                {% endif %}
+                <option value="0"{{selected}}>unBlock</option>
+                {% if 1 == data.status%}
+                {% set selected="selected" %}
+                {% else %}
+                {% set selected="" %}
+                {% endif %}
+                <option value="1"{{selected}}>Block</option>
+        </select></td>
+    </tr>
+    <tr><td>content :</td>
+        <td><textarea name="content">{{data.content}}</textarea></td>
+    </tr>
+    <tr>	
+        <td colspan="2"><input type="submit" name="btninsert" value="Submit"></td>
+	</tr>
+
+    </table>
+</form>
+	{% endblock %}

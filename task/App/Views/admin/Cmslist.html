@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+	<h1>CMS List</h1>
+	<a href="/task/public/Admin/Cms/add">Add Cms</a>
+	<br><br>
+	<table border="2">
+		<tr>
+			<th>pageTitle</th>
+			<th>urlKey</th>
+			<th>status</th>
+            <th>Content</th>
+			<th colspan="2">Action</th>
+		</tr>
+	{% for Post in posts %}
+	<tr>
+		<td>{{Post.pageTitle}}</td>
+		<td>{{Post.urlKey}}</td>
+		<td>{{Post.status}}</td>
+        <td>{{Post.content}}</td>
+		<td><a href="/task/public/Admin/Cms/edit?id={{Post.id}}">Edit</a></td>
+		<td><a href="/task/public/Admin/Cms/delete?id={{Post.id}}">Delete</a></td>
+	</tr>
+	{%endfor%}
+	</table>
+	{% endblock %}

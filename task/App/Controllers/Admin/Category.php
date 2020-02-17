@@ -1,32 +1,45 @@
 <?php
 namespace App\Controllers\Admin;
 use Core\View;
-use App\Models\Post;
+use App\Models\Post; 
+use App\Config;   
 class Category extends \Core\Controller
 {
     public function indexAction()
     {
-        $posts=Post::getAll("category");
-        View::renderTemplate("posts/index.html",['posts'=>$posts]);
-    }
-    public function insertAction()
-    {  
-        if(isset($_POST['btninsert']))
+        if(Config::logincheck())
         {
-            $data=[];
-            $data=Category::filtercategory();
-            $data['createdAt']=date("d-m-Y");
-            $result=Post::insertdata($data,"category");
-            header("location:/task/public/Admin/Category/index");
+            $posts=Post::getAll("category");
+            View::renderTemplate("admin/categorylist.html",['posts'=>$posts]);
+           // session_destroy();
         }
-        else{
-            $parents=Post::getAll("parentcategory");
-        View::renderTemplate("posts/insert.html",['parents'=>$parents]);}
+        else
+        {
+            header('location:/task/public/Admin/login');
+        }
     }
-    public function displayAction()
-    {
-        echo"devansh";
+    public function addAction()
+    {  
+        if(Config::logincheck())
+        {
+            if(isset($_POST['btninsert']))
+            {
+                $data=[];
+                $data=Category::filtercategory();
+                $data['createdAt']=date("d-m-Y");
+                $result=Post::insertdata($data,"category");
+                header("location:/task/public/Admin/Category/index");
+            }
+            else{
+                $parents=Post::getAll("parentcategory");
+            View::renderTemplate("admin/addnewcategory.html",['parents'=>$parents]);}
+        }
+        else
+        {
+            header('location:/task/public/Admin/login');
+        }
     }
+   
     public function filtercategory()
     {   
         $data=[];
@@ -51,7 +64,11 @@ class Category extends \Core\Controller
         }
         
         $data['urlKey']=$_POST['urlKey'];
-        $data['image']="";
+        $img=Category::fileuplode();
+        if($img!="")
+        {
+            $data['image']=$img;
+        }
         $data['status']=$_POST['status'];
         $data['parentCategory']=$_POST['parentCategory'];    
         if($validation == 0)
@@ -63,31 +80,66 @@ class Category extends \Core\Controller
             echo "safddsfdsf";
         }
     }
+    function fileuplode(){
+        if(isset($_FILES['file'])){            
+            $name=$_FILES['file']['name'];
+            $temp_name=$_FILES['file']['tmp_name'];
+            $extension=substr($name,strpos($name,'.')+1);
+            echo $extension;        
+            echo $name;
+            if($extension == 'jpg' || $extension == 'jpeg'){ 
+                if(isset($name)){
+                    $location = '../file/';
+                    if(move_uploaded_file($temp_name,$location.$name)){
+                        return $name;
+                    }
+                }
+            }
+            else{
+                return "";
+            }
+        }
+        else{
+            return "";
+        }
+        
+    }
     public function deleteAction()
     {
-        $result=Post::deletedata($_GET['id'],"category","categoryId");
-        if($result)
+        if(Config::logincheck())
         {
-            header("location:/task/public/Admin/Category/index");
+            $result=Post::deletedata($_GET['id'],"category","categoryId");
+            if($result)
+            {
+                header("location:/task/public/Admin/Category/index");
+            }
+        }
+        else
+        {
+            header('location:/task/public/Admin/login');
         }
     }
-    public function addNewAction()
-    {
-        echo "Hello from the add-new action in the Posts controller!";
-    }
+   
     public function editAction()
     {
-        $posts=Post::getusrdata($_GET['id'],"category","categoryId");
-        $parants=Post::getAll("parentcategory");
-        
-        View::renderTemplate("posts/insert.html",['data'=>$posts[0],'parents'=>$parants]);
-        $data=[];
-        if(isset($_GET['id']) && isset($_POST['btninsert']))
+        if(Config::logincheck())
         {
-            $data=Admincontroller::filtercategory();
-            $result=Post::updatedata($data,$_GET['id'],"category","categoryId");
+            $posts=Post::getusrdata($_GET['id'],"category","categoryId");
+            $parants=Post::getAll("parentcategory");
             
-            header("location:/task/public/Admin/Category/index");
+            View::renderTemplate("admin/addnewcategory.html",['data'=>$posts[0],'parents'=>$parants]);
+            $data=[];
+            if(isset($_GET['id']) && isset($_POST['btninsert']))
+            {
+                $data=Category::filtercategory();
+                $result=Post::updatedata($data,$_GET['id'],"category","categoryId");
+                
+                header("location:/task/public/Admin/Category/index");
+            }
+        }
+        else
+        {
+            header('location:/task/public/Admin/login');
         }
     }
 }   

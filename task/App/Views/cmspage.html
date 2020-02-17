@@ -1,0 +1,9 @@
+<html>
+    {% block body %}
+    {% if(content.status!=1) %}
+    <h1>{{content.content}}</h1>
+    {% else%}
+        page currently Unavailable.
+    {% endif %}
+    {% endblock %}
+</html>

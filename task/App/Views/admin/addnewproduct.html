@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
 	<h1>Add Product</h1>
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">
     <table border="2">
 	<tr>
         <td>Name :</td>
@@ -20,13 +20,26 @@
     </tr>
   
     <tr><td>Status :</td>
-        <td><input type="text" name="status" value={{data.status}}></td>
+        <td><select name="status">
+                {% if 0 == data.status%}
+                {% set selected="selected" %}
+                {% else %}
+                {% set selected="" %}
+                {% endif %}
+                <option value="0"{{selected}}>unBlock</option>
+                {% if 1 == data.status%}
+                {% set selected="selected" %}
+                {% else %}
+                {% set selected="" %}
+                {% endif %}
+                <option value="1"{{selected}}>Block</option>
+        </select></td>
     </tr>
     <tr><td>Discription :</td>
         <td><textarea name="description">{{data.description}}</textarea></td>
     </tr>
     <tr><td>shortDiscription :</td>
-        <td><textarea name="shortdescription">{{data.shortDescription}}</textarea></td>
+        <td><textarea name="shortDescription">{{data.shortDescription}}</textarea></td>
     </tr>
     <tr>
         <td>price :</td>

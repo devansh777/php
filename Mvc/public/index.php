@@ -3,8 +3,6 @@
 //$obj=new Router();
 //echo get_class($obj);
 //require '../App/Controllers/Posts.php';
-
-
 require_once dirname(__DIR__).'/vendor/autoload.php';
 
   /*   spl_autoload_register(

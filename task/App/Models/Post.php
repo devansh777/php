@@ -39,6 +39,7 @@ class Post extends \Core\Model
         try{
             $db= static::getDB();
             $stmt=$db->query("SELECT * FROM $table WHERE $compare=".$id);
+            
             $result=$stmt->fetchAll(PDO::FETCH_ASSOC);
             
             return $result;
@@ -59,7 +60,6 @@ class Post extends \Core\Model
             }
             $updatedata=substr($temp,0,strlen($temp)-1);
             echo"UPDATE $table SET $updatedata where $compare=$id";
-            
           $stmt=$db->exec("UPDATE $table SET $updatedata where $compare=$id");
 
             return $stmt;
@@ -67,6 +67,19 @@ class Post extends \Core\Model
         catch(PDOException $e)
         {
            echo $e->getMessage();
+        }
+    }
+    public static function products($id)
+    {
+        try{
+            $db= static::getDB();
+            $stmt=$db->query("select p.*,c.status cstatus,c.CategoryName from products p,category c,products_categories pc where pc.category_Id=$id AND pc.product_id=p.productId and c.categoryId=$id");
+            $result=$stmt->fetchAll(PDO::FETCH_ASSOC); 
+            return $result;
+        }
+        catch(PDOException $e)
+        {
+            echo $e->getMessage();
         }
     }
 }
