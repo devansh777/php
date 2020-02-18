@@ -1,5 +1,5 @@
-<nav style="background-color: aqua;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     {% for Post in content %}
-    <a href="/task/public/mvc/cms/{{Post.urlKey}}">{{Post.pageTitle}}</a></div>
+    <a href="/task/public/mvc/cms/{{Post.urlKey}}" class="navbar-brand">{{Post.pageTitle}}</a></div>
     {%endfor%}
     </nav>

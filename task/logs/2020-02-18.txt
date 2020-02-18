@@ -1,0 +1,145 @@
+[18-Feb-2020 05:07:07 Europe/Berlin] Uncaucht exception:'Exception'With message ''
+Stack trace:#0 [internal function]: App\Controllers\Mvc->cmsAction()
+#1 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('cms', Array)
+#3 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('mvc/cms/aboutus...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line21
+[18-Feb-2020 05:11:03 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('admin/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line59
+[18-Feb-2020 05:26:17 Europe/Berlin] Uncaucht exception:'Twig\Error\SyntaxError'With message 'Unexpected "}".'
+Stack trace:#0 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(279): Twig\Lexer->lexExpression()
+#1 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(180): Twig\Lexer->lexBlock()
+#2 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'admin/addnewpro...')
+#6 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(277): Twig\Environment->load('admin/addnewpro...')
+#7 /opt/lampp/htdocs/task/Core/View.php(27): Twig\Environment->render('admin/addnewpro...', Array)
+#8 /opt/lampp/htdocs/task/App/Controllers/Admin/Product.php(115): Core\View::renderTemplate('admin/addnewpro...', Array)
+#9 [internal function]: App\Controllers\Admin\Product->editAction()
+#10 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#12 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#13 {main}
+Throw in '/opt/lampp/htdocs/task/App/Views/admin/addnewproduct.html' on Line55
+[18-Feb-2020 05:26:25 Europe/Berlin] Uncaucht exception:'Twig\Error\SyntaxError'With message 'Unexpected "}".'
+Stack trace:#0 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(279): Twig\Lexer->lexExpression()
+#1 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(180): Twig\Lexer->lexBlock()
+#2 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'admin/addnewpro...')
+#6 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(277): Twig\Environment->load('admin/addnewpro...')
+#7 /opt/lampp/htdocs/task/Core/View.php(27): Twig\Environment->render('admin/addnewpro...', Array)
+#8 /opt/lampp/htdocs/task/App/Controllers/Admin/Product.php(115): Core\View::renderTemplate('admin/addnewpro...', Array)
+#9 [internal function]: App\Controllers\Admin\Product->editAction()
+#10 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#12 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#13 {main}
+Throw in '/opt/lampp/htdocs/task/App/Views/admin/addnewproduct.html' on Line55
+[18-Feb-2020 05:27:33 Europe/Berlin] Uncaucht exception:'Twig\Error\SyntaxError'With message 'Unexpected "}".'
+Stack trace:#0 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(279): Twig\Lexer->lexExpression()
+#1 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(180): Twig\Lexer->lexBlock()
+#2 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'admin/addnewpro...')
+#6 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(277): Twig\Environment->load('admin/addnewpro...')
+#7 /opt/lampp/htdocs/task/Core/View.php(27): Twig\Environment->render('admin/addnewpro...', Array)
+#8 /opt/lampp/htdocs/task/App/Controllers/Admin/Product.php(115): Core\View::renderTemplate('admin/addnewpro...', Array)
+#9 [internal function]: App\Controllers\Admin\Product->editAction()
+#10 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#12 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#13 {main}
+Throw in '/opt/lampp/htdocs/task/App/Views/admin/addnewproduct.html' on Line55
+[18-Feb-2020 05:27:48 Europe/Berlin] Uncaucht exception:'Twig\Error\SyntaxError'With message 'Unexpected "}".'
+Stack trace:#0 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(279): Twig\Lexer->lexExpression()
+#1 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(180): Twig\Lexer->lexBlock()
+#2 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'admin/addnewpro...')
+#6 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(277): Twig\Environment->load('admin/addnewpro...')
+#7 /opt/lampp/htdocs/task/Core/View.php(27): Twig\Environment->render('admin/addnewpro...', Array)
+#8 /opt/lampp/htdocs/task/App/Controllers/Admin/Product.php(115): Core\View::renderTemplate('admin/addnewpro...', Array)
+#9 [internal function]: App\Controllers\Admin\Product->editAction()
+#10 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#12 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#13 {main}
+Throw in '/opt/lampp/htdocs/task/App/Views/admin/addnewproduct.html' on Line55
+[18-Feb-2020 05:27:53 Europe/Berlin] Uncaucht exception:'Twig\Error\SyntaxError'With message 'Unexpected "}".'
+Stack trace:#0 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(279): Twig\Lexer->lexExpression()
+#1 /opt/lampp/htdocs/task/vendor/twig/twig/src/Lexer.php(180): Twig\Lexer->lexBlock()
+#2 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'admin/addnewpro...')
+#6 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(277): Twig\Environment->load('admin/addnewpro...')
+#7 /opt/lampp/htdocs/task/Core/View.php(27): Twig\Environment->render('admin/addnewpro...', Array)
+#8 /opt/lampp/htdocs/task/App/Controllers/Admin/Product.php(115): Core\View::renderTemplate('admin/addnewpro...', Array)
+#9 [internal function]: App\Controllers\Admin\Product->editAction()
+#10 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#11 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#12 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#13 {main}
+Throw in '/opt/lampp/htdocs/task/App/Views/admin/addnewproduct.html' on Line55
+[18-Feb-2020 05:39:48 Europe/Berlin] Uncaucht exception:'Twig\Error\SyntaxError'With message 'Unexpected "endblock" tag (expecting closing tag for the "for" tag defined near line 60).'
+Stack trace:#0 /opt/lampp/htdocs/task/vendor/twig/twig/src/TokenParser/ForTokenParser.php(40): Twig\Parser->subparse(Array)
+#1 /opt/lampp/htdocs/task/vendor/twig/twig/src/Parser.php(182): Twig\TokenParser\ForTokenParser->parse(Object(Twig\Token))
+#2 /opt/lampp/htdocs/task/vendor/twig/twig/src/TokenParser/BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#3 /opt/lampp/htdocs/task/vendor/twig/twig/src/Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#4 /opt/lampp/htdocs/task/vendor/twig/twig/src/Parser.php(95): Twig\Parser->subparse(NULL, false)
+#5 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#6 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#7 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#8 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'admin/addnewpro...')
+#9 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(277): Twig\Environment->load('admin/addnewpro...')
+#10 /opt/lampp/htdocs/task/Core/View.php(27): Twig\Environment->render('admin/addnewpro...', Array)
+#11 /opt/lampp/htdocs/task/App/Controllers/Admin/Product.php(119): Core\View::renderTemplate('admin/addnewpro...', Array)
+#12 [internal function]: App\Controllers\Admin\Product->editAction()
+#13 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#14 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#15 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#16 {main}
+Throw in '/opt/lampp/htdocs/task/App/Views/admin/addnewproduct.html' on Line77
+[18-Feb-2020 05:45:53 Europe/Berlin] Uncaucht exception:'Twig\Error\SyntaxError'With message 'Unexpected "endfor" tag (expecting closing tag for the "set" tag defined near line 63).'
+Stack trace:#0 /opt/lampp/htdocs/task/vendor/twig/twig/src/TokenParser/SetTokenParser.php(55): Twig\Parser->subparse(Array, true)
+#1 /opt/lampp/htdocs/task/vendor/twig/twig/src/Parser.php(182): Twig\TokenParser\SetTokenParser->parse(Object(Twig\Token))
+#2 /opt/lampp/htdocs/task/vendor/twig/twig/src/TokenParser/ForTokenParser.php(40): Twig\Parser->subparse(Array)
+#3 /opt/lampp/htdocs/task/vendor/twig/twig/src/Parser.php(182): Twig\TokenParser\ForTokenParser->parse(Object(Twig\Token))
+#4 /opt/lampp/htdocs/task/vendor/twig/twig/src/TokenParser/BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#5 /opt/lampp/htdocs/task/vendor/twig/twig/src/Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#6 /opt/lampp/htdocs/task/vendor/twig/twig/src/Parser.php(95): Twig\Parser->subparse(NULL, false)
+#7 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#8 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#9 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#10 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'admin/addnewpro...')
+#11 /opt/lampp/htdocs/task/vendor/twig/twig/src/Environment.php(277): Twig\Environment->load('admin/addnewpro...')
+#12 /opt/lampp/htdocs/task/Core/View.php(27): Twig\Environment->render('admin/addnewpro...', Array)
+#13 /opt/lampp/htdocs/task/App/Controllers/Admin/Product.php(119): Core\View::renderTemplate('admin/addnewpro...', Array)
+#14 [internal function]: App\Controllers\Admin\Product->editAction()
+#15 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#16 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#17 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#18 {main}
+Throw in '/opt/lampp/htdocs/task/App/Views/admin/addnewproduct.html' on Line73
+[18-Feb-2020 06:02:28 Europe/Berlin] Uncaucht exception:'Error'With message 'Call to undefined function App\Controllers\Admin\push()'
+Stack trace:#0 [internal function]: App\Controllers\Admin\Product->editAction()
+#1 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#3 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Admin/Product.php' on Line117
+[18-Feb-2020 06:02:38 Europe/Berlin] Uncaucht exception:'Error'With message 'Call to undefined function App\Controllers\Admin\push()'
+Stack trace:#0 [internal function]: App\Controllers\Admin\Product->editAction()
+#1 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/task/Core/Router.php(49): Core\Controller->__call('edit', Array)
+#3 /opt/lampp/htdocs/task/public/index.php(16): Core\Router->dispatch('Admin/Product/e...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Admin/Product.php' on Line117

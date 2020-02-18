@@ -1,27 +1,20 @@
+
 {% block body%}
-<div style="text-align: center;">
-<table>
+<div style="display: flex;">
 {% for Post in content %}
 {%if(Post.status==0)%}
-
-<tr>
-    <td colspan="2" align="center"><img src="../../../file/{{Post.image}}" height='200px'width='200px'/></td>
-</tr>
-<tr>
-    <td>Product Name</td><td><b>{{Post.productName}}</b></td>
-</tr>
-<tr>
-    <td>    Product Price</td>
-    <td> {{Post.price}}</td>
-</tr>
-<tr>
-    <td>Description</td>
-    <td>{{Post.description}}</td>
-</tr>
+<div>
+<img src="../../../file/{{Post.image}}" height='400px'width='300px'/>
+</div>
+<div>
+Product Name: <b>{{Post.productName}}</b><br>
+Product Price: {{Post.price}}<br>
+Description: {{Post.description}}<br>
+</div>
 {%else%}
 Product Unavailable
 {%endif%}
 {%endfor%}
-</table>
+
 </div>
 {% endblock %}

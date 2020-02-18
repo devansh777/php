@@ -5,7 +5,8 @@ error_reporting(E_ALL);
 set_error_handler('Core\Error::errorHandler');
 set_exception_handler('Core\Error::exceptionHandler');
 $obj = new Core\Router();   
-$obj->add('',['controller'=>'home','action'=>'index']);
+
+$obj->add('',['controller'=>'mvc','action'=>'cms']);
 $obj->add('admin/{controller}',['namespace' => 'Admin', 'action'=> 'index']);
 $obj->add('{controller}/{action}');
 $obj->add('admin/{controller}/{action}',['namespace'=>'Admin']);

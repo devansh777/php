@@ -12,6 +12,7 @@
         public static function exceptionHandler($exception)
         {
             $code=$exception->getcode();
+            
             if($code !=404)
             {
                 $code=500;

@@ -11,7 +11,7 @@ class Category extends \Core\Controller
         {
             $posts=Post::getAll("category");
             View::renderTemplate("admin/categorylist.html",['posts'=>$posts]);
-           // session_destroy();
+  
         }
         else
         {
@@ -27,6 +27,7 @@ class Category extends \Core\Controller
                 $data=[];
                 $data=Category::filtercategory();
                 $data['createdAt']=date("d-m-Y");
+                
                 $result=Post::insertdata($data,"category");
                 header("location:/task/public/Admin/Category/index");
             }

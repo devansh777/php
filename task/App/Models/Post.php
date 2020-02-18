@@ -22,7 +22,7 @@ class Post extends \Core\Model
         $db= static::getDB();
         $fields=implode(",",array_keys($data));
         $values=implode("','",$data);
-        echo "INSERT INTO $table ($fields) VALUES('".$values."')";
+        //echo "INSERT INTO $table ($fields) VALUES('".$values."')";
         
         $stmt=$db->exec("INSERT INTO $table ($fields) VALUES('".$values."')");
         return $db->lastInsertId();
@@ -30,6 +30,7 @@ class Post extends \Core\Model
     public static function deletedata($id,$table,$compare)
     {
         $db= static::getDB();
+        echo "DELETE FROM $table where $compare=$id";
         $stmt=$db->exec("DELETE FROM $table where $compare=$id");
         return $stmt;
     }
@@ -59,7 +60,7 @@ class Post extends \Core\Model
                 $temp.=$key."='".$value."',";
             }
             $updatedata=substr($temp,0,strlen($temp)-1);
-            echo"UPDATE $table SET $updatedata where $compare=$id";
+           // echo"UPDATE $table SET $updatedata where $compare=$id";
           $stmt=$db->exec("UPDATE $table SET $updatedata where $compare=$id");
 
             return $stmt;
@@ -73,7 +74,7 @@ class Post extends \Core\Model
     {
         try{
             $db= static::getDB();
-            $stmt=$db->query("select p.*,c.status cstatus,c.CategoryName from products p,category c,products_categories pc where pc.category_Id=$id AND pc.product_id=p.productId and c.categoryId=$id");
+            $stmt=$db->query("select p.*,c.status cstatus,c.description cdescription,c.CategoryName from products p,category c,products_categories pc where pc.categoryId=$id AND pc.productId=p.productId and c.categoryId=$id");
             $result=$stmt->fetchAll(PDO::FETCH_ASSOC); 
             return $result;
         }

@@ -25,9 +25,12 @@ class Product extends \Core\Controller
                 $data=Product::filterproduct();
                 $data['createdAt']=date("d-m-Y");
                 $result=Post::insertdata($data,"products");
-                $cat['category_id']=$_POST['category'];
-                $cat['product_id']=$result;
-                Post::insertdata($cat,"products_categories");
+                $cat['categoryId']=$_POST['category'];
+                foreach ($cat['categoryId'] as $key => $value) {
+                   $c['categoryId']=$value;
+                   $c['productId']=$result;
+                   Post::insertdata($c,"products_categories");
+                }
                 header("location:/task/public/Admin/Product/index");
             }
             else{
@@ -108,16 +111,26 @@ class Product extends \Core\Controller
         {
             $posts=Post::getusrdata($_GET['id'],"products","productId");
             $parants=Post::getAll("category");
-            $category=Post::getusrdata($_GET['id'],"products_categories","product_Id");   
-            View::renderTemplate("admin/addnewproduct.html",['data'=>$posts[0],'parents'=>$parants,'category'=>$category[0]]);
+            $category=Post::getusrdata($_GET['id'],"products_categories","productId");   
+            $arr=[];
+            foreach ($category as $key) {
+                array_push($arr,$key['categoryId']);
+            }
+            View::renderTemplate("admin/addnewproduct.html",['data'=>$posts[0],'category'=>$parants,'selectedcategory'=>$arr]);
             $data=[];
             if(isset($_GET['id']) && isset($_POST['btninsert']))
             {
                 $data=Product::filterproduct();
+
                 $result=Post::updatedata($data,$_GET['id'],"products","productId");
-                $cat['category_id']=$_POST['category'];
-                $cat['product_id']=$_GET['id'];
-                $result=Post::updatedata($cat,$_GET['id'],"products_categories","product_Id");
+                $cat['categoryId']=$_POST['category'];
+                $result=Post::deletedata($_GET['id'],"products_categories","productId");
+                print_r($cat['categoryId']);
+                foreach ($cat['categoryId'] as $key => $value) {
+                    $c['categoryId']=$value;
+                    $c['productId']=$_GET['id'];
+                    Post::insertdata($c,"products_categories");
+                 }
                 header("location:/task/public/Admin/Product/index");
             }
         }

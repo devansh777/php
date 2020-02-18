@@ -50,15 +50,15 @@
         <td><input type="text" name="stock" value={{data.stock}}></td>
     </tr>   
     <tr><td>Category :</td>
-        <td><select name="category">
-            {% for Post in parents %}
-                {% if Post.categoryId == category.category_id %}
-                    {% set selected="selected" %}
-                {% else %}
-                    {% set selected="" %}
-                {% endif %}
-            <option value="{{Post.categoryId}}"{{selected}}>{{Post.CategoryName}}</option>
-            
+        <td><select name="category[]" multiple>
+            {% for Post in category %}
+                 {% if Post.categoryId in selectedcategory %}
+                        {% set selected="selected" %}
+                    {% else %}
+                        {% set selected="" %}
+                    {% endif %}
+                <option value="{{Post.categoryId}}"{{selected}}>{{Post.CategoryName}}</option>
+                        
             {% endfor %}
         </select></td>
     </tr>

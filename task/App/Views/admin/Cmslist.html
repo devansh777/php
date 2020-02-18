@@ -1,15 +1,16 @@
 {% extends 'base.html' %}
 {% block body %}
 	<h1>CMS List</h1>
-	<a href="/task/public/Admin/Cms/add">Add Cms</a>
+	<a href="/task/public/Admin/Cms/add" class="navbar-brand">Add Cms</a>
 	<br><br>
-	<table border="2">
+	<table class="table table-striped">
 		<tr>
 			<th>pageTitle</th>
 			<th>urlKey</th>
 			<th>status</th>
             <th>Content</th>
-			<th colspan="2">Action</th>
+			<th>Edit</th>
+			<th>Delete</th>
 		</tr>
 	{% for Post in posts %}
 	<tr>
