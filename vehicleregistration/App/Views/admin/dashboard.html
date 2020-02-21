@@ -24,11 +24,11 @@
         <td>Booked</td>
 		{%endif%}
 		<td>{{Post.timeslot}}</td>
-		<td><a href="/vihicalregisrtation/public/Admin/admin/edit/{{Post.serviceid}}">Edit</a></td>
+		<td><a href="/vehicleregistration/public/Admin/admin/edit/{{Post.serviceid}}">Edit</a></td>
 		{%if Post.status == 0%}
-		<td><a href="/vihicalregisrtation/public/Admin/admin/booked/{{Post.serviceid}}">Booked</a></td>
+		<td><a href="/vehicleregistration/public/Admin/admin/booked/{{Post.serviceid}}">Booked</a></td>
 		{% else %}
-		<td><a href="/vihicalregisrtation/public/Admin/admin/pending/{{Post.serviceid}}">Pending</a></td>
+		<td><a href="/vehicleregistration/public/Admin/admin/pending/{{Post.serviceid}}">Pending</a></td>
 		{%endif%}
 	</tr>
 	{%endfor%}

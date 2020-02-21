@@ -22,7 +22,7 @@ class Post extends \Core\Model
         $db= static::getDB();
         $fields=implode(",",array_keys($data));
         $values=implode("','",$data);
-        echo "INSERT INTO $table ($fields) VALUES('".$values."')";
+       // echo "INSERT INTO $table ($fields) VALUES('".$values."')";
         $stmt=$db->exec("INSERT INTO $table ($fields) VALUES('".$values."')");
         return $db->lastInsertId();
     }

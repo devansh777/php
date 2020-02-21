@@ -9,7 +9,7 @@ class User extends \Core\Controller
     {
         if(isset($_POST['Registration']))
         {
-            header('location:/vihicalregistration/public/User/registration');
+            header('location:/vehicleregistration/public/User/registration');
         }
         else{
             if(isset($_POST['login']))
@@ -18,7 +18,7 @@ class User extends \Core\Controller
                 if(isset($data[0]['userid']))
                 {
                     $_SESSION['userid']=$data[0]['userid'];
-                    header('location:/vihicalregistration/public/User/dashboard');
+                    header('location:/vehicleregistration/public/User/dashboard');
                 }
             }
         View::renderTemplate("User/login.html");}
