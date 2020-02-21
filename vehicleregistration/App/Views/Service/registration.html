@@ -1,0 +1,78 @@
+<html>
+<head>    
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet"
+    type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script language="javascript">
+        $(document).ready(function () {
+            $("#txtdate").datepicker({
+                dateFormat:'dd/mm/yy',
+                minDate: 1
+                
+            });
+        });
+    </script>
+</head>
+<body>   
+<h4>Registration form</h4>
+    <form method="POST">
+        <table>
+            <tr>    
+                <td>Title :</td>
+                <td><input type="text" name="title" value="{{data.title}}"></td>
+            </tr>
+            <tr>
+                <td> vehicle Number:</td>
+                <td><input type="text" name="vehiclenumber" value="{{data.vehiclenumber}}"></td>
+            </tr>
+            <tr>
+                <td>userlicense :</td>
+                <td><input type="text" name="userlicense" value="{{data.userlicense}}"></td>
+            </tr>
+            <tr>
+                <td>date:</td>
+                <td><input type="text" name="date" id="txtdate" value="{{data.date}}"></td>
+            </tr>
+            <tr>
+                <td>timeslot :</td>
+                <td><select name="timeslot">
+                        <option value='9-10'>9-10</option>
+                        <option value='10-11'>10-11</option>
+                        <option value='11-12'>11-12</option>
+                        <option value='12-1'>12-1</option>
+                        <option value='1-2'>1-2</option>
+                        <option value='2-3'>2-3</option>
+                        <option value='3-4'>3-4</option>
+                        <option value='4-5'>4-5</option>
+                        <option value='5-6'>5-6</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>vehicle Issue:</td>
+                <td><textarea name='vehicalissue'>{{data.vehicalissue}}</textarea></td>
+            </tr>
+            <tr>
+                <td>Service Center:</td>
+                 <td><select name="center" value="{{data.center}}">
+                    <option value='center1'>center1</option>
+                    <option value='center2'>center2</option>
+                    <option value='center3'>center3</option>
+                    <option value='center4'>center4</option>
+                    <option value='center5'>center5</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Status :</td>
+                <td><select name="status" value="{{data.status}}">
+                    <option value='0'>pending</option></select>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="submitservice" value="Registration"></td>
+            </tr>
+        </table>
+    </form>
+    <body>
+</html>

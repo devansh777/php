@@ -1,0 +1,33 @@
+[15-Feb-2020 05:43:25 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/cyber/task/public/index.php(41): Core\Router->dispatch('cyber/task/publ...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/cyber/task/Core/Router.php' on Line77
+[15-Feb-2020 05:43:47 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/cyber/task/public/index.php(41): Core\Router->dispatch('cyber/task/publ...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/cyber/task/Core/Router.php' on Line77
+[15-Feb-2020 05:43:49 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/cyber/task/public/index.php(41): Core\Router->dispatch('cyber/task/task...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/cyber/task/Core/Router.php' on Line77
+[15-Feb-2020 05:43:50 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/cyber/task/public/index.php(41): Core\Router->dispatch('cyber/task/task...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/cyber/task/Core/Router.php' on Line77
+[15-Feb-2020 05:43:51 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/cyber/task/public/index.php(41): Core\Router->dispatch('cyber/task/task...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/cyber/task/Core/Router.php' on Line77
+[15-Feb-2020 05:43:57 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/cyber/task/public/index.php(41): Core\Router->dispatch('cyber/task/task...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/cyber/task/Core/Router.php' on Line77
+[15-Feb-2020 05:48:48 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '','sdf@dwgf.sdf','436456','Submit')' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(31): PDO->exec('INSERT INTO cat...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Posts.php(29): App\Models\Post::insertdata(Array)
+#2 [internal function]: App\Controllers\Posts->insertAction()
+#3 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#4 /opt/lampp/htdocs/task/Core/Router.php(64): Core\Controller->__call('insert', Array)
+#5 /opt/lampp/htdocs/task/public/index.php(41): Core\Router->dispatch('posts/insert')
+#6 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line31

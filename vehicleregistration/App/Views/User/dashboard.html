@@ -1,0 +1,31 @@
+<html>
+<a href="/vihicalregistration/public/service/index">Regisrtation your vehical service</a><br>
+<a href="/vihicalregistration/public/service/logout">Logout</a>
+<br><br><br>
+<h3>Your Registered Service Booking</h3>
+<br><br>
+<table border="2">
+    <tr>
+        <th>Title</th>
+        <th>vehicle number</th>
+        <th>Date</th>
+        <th>Servicecenter</th>
+        <th>Timeslot</th>
+        <th>status</th>
+    </tr>
+    {% for Post in service %}
+	<tr>
+		<td>{{Post.title}}</td>
+        <td>{{Post.vehiclenumber}}</td>
+        <td>{{Post.date}}</td>
+        <td>{{Post.servicecenter}}</td>
+        <td>{{Post.timeslot}}</td>
+        {%if Post.status == 0 %}
+        <td>Pending</td>
+        {% else %}
+        <td>Booked</td>
+        {%endif%}
+	</tr>
+	{%endfor%}
+</table>
+</html>

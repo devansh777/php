@@ -1,0 +1,669 @@
+[20-Feb-2020 05:35:13 Europe/Berlin] Uncaucht exception:'Error'With message 'Function name must be a string'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Cart.php' on Line11
+[20-Feb-2020 05:43:18 Europe/Berlin] Uncaucht exception:'Error'With message 'Function name must be a string'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Cart.php' on Line11
+[20-Feb-2020 05:43:50 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(11): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 11, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line11
+[20-Feb-2020 05:44:23 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: cart'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line18
+[20-Feb-2020 05:44:27 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(11): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 11, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line11
+[20-Feb-2020 05:44:28 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: cart'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line18
+[20-Feb-2020 05:44:34 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: cart'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line18
+[20-Feb-2020 05:44:43 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(11): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 11, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line11
+[20-Feb-2020 05:44:46 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: cart'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line18
+[20-Feb-2020 05:49:13 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(13): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line13
+[20-Feb-2020 05:51:40 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(13): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line13
+[20-Feb-2020 05:52:57 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(13): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line13
+[20-Feb-2020 06:06:36 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(13): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line13
+[20-Feb-2020 06:09:12 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(13): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line13
+[20-Feb-2020 06:09:57 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(13): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line13
+[20-Feb-2020 07:02:34 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: cart'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(19): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line19
+[20-Feb-2020 07:06:22 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[HY000]: General error: 1364 Field 'productId' doesn't have a default value'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[20-Feb-2020 07:09:02 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Array to string conversion'
+Stack trace:#0 [internal function]: Core\Error::errorHandler(8, 'Array to string...', '/opt/lampp/htdo...', 24, Array)
+#1 /opt/lampp/htdocs/task/App/Models/Post.php(24): implode('','', Array)
+#2 /opt/lampp/htdocs/task/App/Controllers/Cart.php(19): App\Models\Post::insertdata(Array, 'cart')
+#3 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#4 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#5 {main}
+Throw in '' on Line24
+[20-Feb-2020 07:09:48 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:10:24 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:11:56 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:11:57 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(23): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 23, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line23
+[20-Feb-2020 07:12:31 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:12:33 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(23): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 23, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line23
+[20-Feb-2020 07:14:13 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:14:14 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(23): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 23, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line23
+[20-Feb-2020 07:15:42 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:16:48 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:17:00 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:18:10 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:18:12 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: quentity'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 24, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line24
+[20-Feb-2020 07:18:35 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:18:59 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:19:44 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:22:02 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:22:26 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:23:09 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:23:10 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:23:59 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:24:01 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 07:24:22 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(15): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 15, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line15
+[20-Feb-2020 09:08:17 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/delete/ele...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[20-Feb-2020 09:11:23 Europe/Berlin] Uncaucht exception:'Exception'With message ''
+Stack trace:#0 [internal function]: App\Controllers\Mvc->cmsAction()
+#1 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): Core\Controller->__call('cms', Array)
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line27
+[20-Feb-2020 09:12:33 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/delete/8')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[20-Feb-2020 09:13:49 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/delete/8')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[20-Feb-2020 09:14:36 Europe/Berlin] Uncaucht exception:'Exception'With message ''
+Stack trace:#0 [internal function]: App\Controllers\Mvc->cmsAction()
+#1 /opt/lampp/htdocs/task/Core/Controller.php(18): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): Core\Controller->__call('cms', Array)
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line27
+[20-Feb-2020 09:14:51 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/delete/8')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[20-Feb-2020 11:58:01 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:58:03 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:58:14 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:58:15 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:58:15 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:58:50 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:01 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:02 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:03 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:03 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:42 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', '')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:44 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', '')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:44 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', '')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:44 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', '')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:45 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', '')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:49 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:49 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:50 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:50 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:50 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 11:59:50 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:01:49 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=admin' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('admin', 'admin')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:05:08 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=admin' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('admin', 'admin')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:05:10 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=admin' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('admin', 'admin')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:05:11 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=admin' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('admin', 'admin')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:07:24 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:07:25 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:07:26 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:07:26 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:07:26 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:07:26 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:07:26 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 12:07:27 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'password=devansh' at line 1'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(104): PDO->query('SELECT uid FROM...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(72): App\Models\Post::loginchk('devansh', 'devansh')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->login()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Mvc/login')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line104
+[20-Feb-2020 18:59:25 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(22): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 22, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line22
+[20-Feb-2020 18:59:55 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(22): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 22, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line22
+[20-Feb-2020 19:00:43 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(22): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 22, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line22
+[20-Feb-2020 19:19:32 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[HY000]: General error: 1364 Field 'userid' doesn't have a default value'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[20-Feb-2020 19:19:35 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:19:39 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[HY000]: General error: 1364 Field 'userid' doesn't have a default value'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[20-Feb-2020 19:19:41 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:19:57 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[HY000]: General error: 1364 Field 'userid' doesn't have a default value'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[20-Feb-2020 19:20:12 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[HY000]: General error: 1364 Field 'userid' doesn't have a default value'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[20-Feb-2020 19:20:15 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:20:33 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[HY000]: General error: 1364 Field 'userid' doesn't have a default value'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[20-Feb-2020 19:21:50 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[HY000]: General error: 1364 Field 'userid' doesn't have a default value'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[20-Feb-2020 19:21:52 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:22:34 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:22:38 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:23:31 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:27:48 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:27:50 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:28:54 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 19:38:53 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[20-Feb-2020 19:39:06 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products/mi...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[20-Feb-2020 19:39:11 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products/mi...')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[20-Feb-2020 19:48:08 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 20:09:41 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 20:10:18 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 20:10:31 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[20-Feb-2020 20:12:06 Europe/Berlin] Uncaucht exception:'Exception'With message 'Method productAction not found in controller App\Controllers\Admin\Admin'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): Core\Controller->__call('product', Array)
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Admin/admin/pro...')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Controller.php' on Line24

@@ -1,0 +1,233 @@
+[21-Feb-2020 05:27:18 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[21-Feb-2020 05:32:10 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[21-Feb-2020 05:32:13 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(90): PDO->query('SELECT p.produc...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): App\Models\Post::cartdata('1')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line90
+[21-Feb-2020 05:33:20 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[21-Feb-2020 05:33:22 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(90): PDO->query('SELECT p.produc...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): App\Models\Post::cartdata('1')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line90
+[21-Feb-2020 05:33:46 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[21-Feb-2020 05:33:48 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(90): PDO->query('SELECT p.produc...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): App\Models\Post::cartdata('1')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line90
+[21-Feb-2020 06:08:25 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: uid'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#3 {main}
+Throw in '' on Line29
+[21-Feb-2020 06:08:36 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(90): PDO->query('SELECT p.produc...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): App\Models\Post::cartdata('1')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line90
+[21-Feb-2020 06:12:45 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(27): PDO->exec('INSERT INTO car...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(24): App\Models\Post::insertdata(Array, 'cart')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line27
+[21-Feb-2020 06:12:47 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mvc.cart' doesn't exist'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(90): PDO->query('SELECT p.produc...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(29): App\Models\Post::cartdata('1')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line90
+[21-Feb-2020 06:59:01 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.quentity' in 'field list''
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(90): PDO->query('SELECT p.produc...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(39): App\Models\Post::cartdata('1')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->displayCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/displayCar...')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line90
+[21-Feb-2020 06:59:04 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined offset: 0'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(12): Core\Error::errorHandler(8, 'Undefined offse...', '/opt/lampp/htdo...', 12, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line12
+[21-Feb-2020 07:00:03 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined offset: 0'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(12): Core\Error::errorHandler(8, 'Undefined offse...', '/opt/lampp/htdo...', 12, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line12
+[21-Feb-2020 07:01:10 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined offset: 0'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(13): Core\Error::errorHandler(8, 'Undefined offse...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line13
+[21-Feb-2020 07:01:55 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined offset: 0'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(13): Core\Error::errorHandler(8, 'Undefined offse...', '/opt/lampp/htdo...', 13, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line13
+[21-Feb-2020 07:05:47 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined offset: 0'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(12): Core\Error::errorHandler(8, 'Undefined offse...', '/opt/lampp/htdo...', 12, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line12
+[21-Feb-2020 07:06:24 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined offset: 0'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(12): Core\Error::errorHandler(8, 'Undefined offse...', '/opt/lampp/htdo...', 12, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line12
+[21-Feb-2020 07:06:35 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined offset: 0'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined offse...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line18
+[21-Feb-2020 07:08:09 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line18
+[21-Feb-2020 07:08:59 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line18
+[21-Feb-2020 07:09:24 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line18
+[21-Feb-2020 07:09:35 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line18
+[21-Feb-2020 07:09:36 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(18): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 18, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line18
+[21-Feb-2020 07:10:44 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(19): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line19
+[21-Feb-2020 07:11:11 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(19): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line19
+[21-Feb-2020 07:11:12 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(19): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line19
+[21-Feb-2020 07:11:21 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: price'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(19): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line19
+[21-Feb-2020 07:12:44 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productId' in 'field list''
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(64): PDO->exec('UPDATE cart SET...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(26): App\Models\Post::updatedata(Array, '1', 'cart', 'cartId')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line64
+[21-Feb-2020 07:13:02 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: totalamount'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Cart.php(19): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 19, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#3 {main}
+Throw in '' on Line19
+[21-Feb-2020 07:15:11 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productId' in 'field list''
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(64): PDO->exec('UPDATE cart SET...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(26): App\Models\Post::updatedata(Array, '1', 'cart', 'cartId')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line64
+[21-Feb-2020 07:16:31 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productId' in 'field list''
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(64): PDO->exec('UPDATE cart SET...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(27): App\Models\Post::updatedata(Array, '1', 'cart', 'cartId')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line64
+[21-Feb-2020 07:19:55 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productId' in 'field list''
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(64): PDO->exec('UPDATE cart SET...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(27): App\Models\Post::updatedata(Array, '1', 'cart', 'cartId')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line64
+[21-Feb-2020 07:20:39 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productId' in 'field list''
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(63): PDO->exec('UPDATE cart SET...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(27): App\Models\Post::updatedata(Array, '1', 'cart', 'cartId')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line63
+[21-Feb-2020 07:20:40 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productId' in 'field list''
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(63): PDO->exec('UPDATE cart SET...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(27): App\Models\Post::updatedata(Array, '1', 'cart', 'cartId')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line63
+[21-Feb-2020 07:21:56 Europe/Berlin] Uncaucht exception:'PDOException'With message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productId' in 'field list''
+Stack trace:#0 /opt/lampp/htdocs/task/App/Models/Post.php(64): PDO->exec('UPDATE cart SET...')
+#1 /opt/lampp/htdocs/task/App/Controllers/Cart.php(27): App\Models\Post::updatedata(Array, '1', 'cart', 'cartId')
+#2 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Cart->addToCart()
+#3 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('Cart/addToCart')
+#4 {main}
+Throw in '/opt/lampp/htdocs/task/App/Models/Post.php' on Line64

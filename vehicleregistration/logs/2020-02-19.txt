@@ -1,0 +1,340 @@
+[19-Feb-2020 10:54:37 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/cms/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 11:28:00 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/file/index....')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 11:28:00 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/file/index....')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 11:28:07 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('file/index.jpeg')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 11:28:07 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('file/index.jpeg')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 11:51:35 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/cms/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 11:58:44 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 11:58:51 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 11:58:56 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 11:59:02 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 11:59:16 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 11:59:38 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 11:59:38 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 12:00:07 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:00:21 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:00:30 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:00:35 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 12:00:36 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 12:00:36 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 12:00:37 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 12:00:37 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 12:00:37 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 12:00:56 Europe/Berlin] Uncaucht exception:'ArgumentCountError'With message 'Too few arguments to function App\Controllers\Mvc::products(), 0 passed in /opt/lampp/htdocs/task/Core/Router.php on line 59 and exactly 1 expected'
+Stack trace:#0 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->products()
+#1 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products')
+#2 {main}
+Throw in '/opt/lampp/htdocs/task/App/Controllers/Mvc.php' on Line52
+[19-Feb-2020 12:03:50 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:03:51 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/products/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:23:56 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:23:59 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:33 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:33 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:33 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:33 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:34 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:34 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:36 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:37 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:37 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:37 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:37 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:37 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:37 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:38 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:38 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:38 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:24:38 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:25:21 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:25:22 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:25:22 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:25:42 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:26:00 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:26:01 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:29 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:30 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:30 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:30 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:30 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:31 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:31 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:31 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:31 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:31 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:31 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:27:32 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:05 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:05 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:06 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:06 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:06 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:06 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:07 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:07 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:28:07 Europe/Berlin] Uncaucht exception:'Exception'With message 'No Route Matched'
+Stack trace:#0 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart/')
+#1 {main}
+Throw in '/opt/lampp/htdocs/task/Core/Router.php' on Line70
+[19-Feb-2020 12:29:34 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined variable: data'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(76): Core\Error::errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 76, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->addtocart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart')
+#3 {main}
+Throw in '' on Line76
+[19-Feb-2020 12:29:34 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined variable: data'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(76): Core\Error::errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 76, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->addtocart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart')
+#3 {main}
+Throw in '' on Line76
+[19-Feb-2020 12:29:35 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined variable: data'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(76): Core\Error::errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 76, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->addtocart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart')
+#3 {main}
+Throw in '' on Line76
+[19-Feb-2020 12:29:35 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined variable: data'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(76): Core\Error::errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 76, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->addtocart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart')
+#3 {main}
+Throw in '' on Line76
+[19-Feb-2020 12:29:58 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined variable: data'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(76): Core\Error::errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 76, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->addtocart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/addtocart')
+#3 {main}
+Throw in '' on Line76
+[19-Feb-2020 13:34:01 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: cart'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(81): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 81, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->displaycart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/displaycart')
+#3 {main}
+Throw in '' on Line81
+[19-Feb-2020 13:34:02 Europe/Berlin] Uncaucht exception:'ErrorException'With message 'Undefined index: cart'
+Stack trace:#0 /opt/lampp/htdocs/task/App/Controllers/Mvc.php(81): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 81, Array)
+#1 /opt/lampp/htdocs/task/Core/Router.php(59): App\Controllers\Mvc->displaycart()
+#2 /opt/lampp/htdocs/task/public/index.php(15): Core\Router->dispatch('mvc/displaycart')
+#3 {main}
+Throw in '' on Line81

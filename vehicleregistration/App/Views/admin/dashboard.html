@@ -1,0 +1,36 @@
+<html>
+<br><br><br>
+<h3>Service Booking</h3>
+<br><br>
+<table border="2">
+    <tr>
+        <th>Title</th>
+        <th>vehicle number</th>
+        <th>Date</th>
+        <th>servicecenter</th>
+		<th>status</th>
+		<th>Sloat</th>
+		<th colspan="2">Action</th>
+    </tr>
+    {% for Post in service %}
+	<tr>
+		<td>{{Post.title}}</td>
+        <td>{{Post.vehiclenumber}}</td>
+        <td>{{Post.date}}</td>
+        <td>{{Post.servicecenter}}</td>
+        {%if Post.status == 0 %}
+        <td>Pending</td>
+        {% else %}
+        <td>Booked</td>
+		{%endif%}
+		<td>{{Post.timeslot}}</td>
+		<td><a href="/vihicalregisrtation/public/Admin/admin/edit/{{Post.serviceid}}">Edit</a></td>
+		{%if Post.status == 0%}
+		<td><a href="/vihicalregisrtation/public/Admin/admin/booked/{{Post.serviceid}}">Booked</a></td>
+		{% else %}
+		<td><a href="/vihicalregisrtation/public/Admin/admin/pending/{{Post.serviceid}}">Pending</a></td>
+		{%endif%}
+	</tr>
+	{%endfor%}
+</table>
+</html>
